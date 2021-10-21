@@ -101,6 +101,9 @@ SSH into the control node and follow the steps below:
 ### Commands the User will need to run
 Put install-elk.yml under /etc/ansible
 Edit the hosts file in /etc/ansible and include the correct IP address with ansible_python_interpreter=/usr/bin/python3 under the correct []
+
 Run install-elk.yml by typing command: ansible-playbook install-elk.yml
+
 Now visit HTTP://<ELKServer_Public_IP>:5601
+
 Run the filebeat-playbook.yml and metricbeat-playbook.yml in the /etc/ansible folder by using ansible-playbook, filebeat-playbook.yml, and ansible-playbook / metricbeat-playbook.yml
