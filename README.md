@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-Diagrams/diagram_filename.png
+https://github.com/B-Sayer/GT_Project_1/blob/a6104d6a27e8abb9d4d280827c466bf129f9932b/Diagrams/diagram_filename.png
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the /etc/ansible file may be used to install only certain pieces of it, such as Filebeat.
 
