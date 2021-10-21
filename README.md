@@ -6,7 +6,11 @@ https://github.com/B-Sayer/GT_Project_1/blob/a6104d6a27e8abb9d4d280827c466bf129f
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the /etc/ansible file may be used to install only certain pieces of it, such as Filebeat.
 
-  - _TODO: Enter the playbook file._
+  - https://github.com/B-Sayer/GT_Project_1/blob/2652b4f59d6a0048408312defdd464829c728e71/Ansible/ansible_config.yml
+  - https://github.com/B-Sayer/GT_Project_1/blob/2652b4f59d6a0048408312defdd464829c728e71/Ansible/ansible_elk.yml
+  - https://github.com/B-Sayer/GT_Project_1/blob/2652b4f59d6a0048408312defdd464829c728e71/Ansible/filebeat-playbook.yml
+  - https://github.com/B-Sayer/GT_Project_1/blob/2652b4f59d6a0048408312defdd464829c728e71/Ansible/install-elk.yml
+  - https://github.com/B-Sayer/GT_Project_1/blob/2652b4f59d6a0048408312defdd464829c728e71/Ansible/metricbeat-playbook.yml
 
 This document contains the following details:
 - Description of the Topologu
@@ -24,7 +28,7 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
 - The load balancers can protect against Distributed Denial-of-Service attacks (DDoS Attacks). The jumpbox enables control of all traffic by forcing it into one center point, i.e. the jumpbox.
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the data and system logs.
 - Filebeat enables the monitoring of log files or locations that are specified. Logs are collected and forwarded to either Elasticsearch or Logstash for indexing.
 - Metricbeat collects metrics and statistics, routing them to a specified output such as Logstash or Elasticsearch.
 
@@ -44,7 +48,8 @@ The machines on the internal network are not exposed to the public Internet.
 Only the Jump-Box-Provisioner machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 - Home Network IP Addresses
 
-Machines within the network can only be accessed by _____.
+Machines within the network can only be accessed by the Jump-Box-Provisioner.
+
 - Jump-Box-Provisioner: 23.96.107.167 vis SSH port 22. Private IP: 10.0.0.4
 
 A summary of the access policies in place can be found in the table below.
